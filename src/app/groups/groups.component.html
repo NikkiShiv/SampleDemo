@@ -1,0 +1,21 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of list">
+                <td>{{item.name}}</td>
+                <td>{{item.id}}</td>
+                <td>
+                    <button (click)="NaviGroup(item.id,item.name)">VIEW</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
